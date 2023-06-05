@@ -26,3 +26,6 @@ document
    window.scrollBy(0, window.innerHeight); // Scroll one viewport height
   }
  });
+document.addEventListener('contextmenu', function(event) {
+  event.preventDefault();
+});
