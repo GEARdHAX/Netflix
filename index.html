@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="netflix_favicon.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <title>Netflix-English</title>
+</head>
+
+<body>
+  <section class="landing">
+    <img class="landing-pic" src="Landing pic.jpg" alt="netflix_background">
+    <nav>
+      <button style="background-color: red; color: white; border-radius: 6px;" id="sign-in">Sign
+        In</button>
+      <img class="logo" src="netflix_logo.png" alt="netflix_logo">
+      <div class="dropdown">
+        <button style="margin: 0px; background-color: transparent;" class="btn btn-secondary dropdown-toggle"
+          type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          🌏 English
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">English</a></li>
+          <li><a class="dropdown-item" href="hindi.html">हिंदी</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <h1 style="font-weight: bolder; letter-spacing: 2px;">Unlimited movies, TV shows and more</h1>
+      <hr>
+      <h3>Watch anywhere. Cancel anytime.</h3>
+      <hr>
+      <p>Ready to watch? Enter your email to create or restart your membership.
+      <p>
+        <input placeholder="Email address" type="email" name="email" id="emailInput" required>
+        <button id="submit" type="submit" form="emailForm">Get Started →</button>
+    </div>
+  </section>
+  <!-- <===============TV VIEW===============> -->
+  <section class="tv">
+    <div class="text">
+      <h1 style="font-size: 40px; padding-bottom: 10px; font-weight: bolder;">Enjoy on your TV</h1>
+      <p style="font-size: 18px; font-weight: 100;">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+        players and more.</p>
+    </div>
+    <div class="media">
+      <img id="tv" src="tv.png" alt="">
+      <video autoplay loop src="video-tv-in-0819.m4v"></video>
+    </div>
+  </section>
+  <!-- <===============PHONE VIEW===============> -->
+  <section class="tv">
+    <div class="media">
+      <img id="tv" src="mobile-0819.jpg" alt="">
+    </div>
+    <div style="margin-right: 30px; margin-left: 0px;" class="text">
+      <h1 style="font-size: 40px; padding-bottom: 10px; font-weight: bolder;">Download your shows to watch offline</h1>
+      <p style="font-size: 18px; font-weight: 100;">Save your favourites easily and always have something to watch.</p>
+    </div>
+  </section>
+  <!-- <===============DEVICES VIEW===============> -->
+  <section class="tv">
+    <div class="text">
+      <h1 style="font-size: 40px; padding-bottom: 10px; font-weight: bolder;">Watch everywhere</h1>
+      <p style="font-size: 18px; font-weight: 100;">Stream unlimited movies and TV shows on your phone, tablet, laptop,
+        and TV.</p>
+    </div>
+    <div class="media">
+      <img id="tv" src="device-pile-in.png" alt="">
+    </div>
+  </section>
+  <!-- <===============CHILDREN VIEW===============> -->
+  <section class="tv">
+    <div class="media">
+      <img id="tv" src="Children.png" alt="">
+    </div>
+    <div style="margin-right: 30px; margin-left: 0px;" class="text">
+      <h1 style="font-size: 40px; padding-bottom: 10px; font-weight: bolder;">Create profiles for kids</h1>
+      <p style="font-size: 18px; font-weight: 100;">Send children on adventures with their favourite characters in a
+        space made just for them—free with your membership.</p>
+    </div>
+  </section>
+  <section class="accordion">
+    <center>
+      <h1 style="color: white; font-size: 50px; font-weight: bold;">Frequently Asked Questions</h1>
+    </center>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            What is Netflix?
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p> Netflix is a streaming service that offers a wide variety of award-winning TV
+              shows, movies, anime, documentaries and more – on thousands of internet-connected devices.</p>
+            You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price.
+            There's always something new to discover, and new TV shows and movies are added every week!
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            How much does Netflix cost?
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device,
+            all for one fixed monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Where can I watch?
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p> Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on
+              the web at netflix.com from your personal computer or on any internet-connected device that offers the
+              Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</p>
+
+            You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch
+            while you're on the go and without an internet connection. Take Netflix with you anywhere.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            How do I cancel ?
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Netflix is flexible. There are no annoying contracts and no commitments. You can
+            easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account
+            anytime.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+            What can I watch on Netflix?
+          </button>
+        </h2>
+        <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Netflix has an extensive library of feature films, documentaries, TV shows, anime,
+            award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+            Is Netflix good for kids
+          </button>
+        </h2>
+        <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p> The Netflix Kids experience is included in your membership to give parents control
+              while kids enjoy family-friendly TV shows and films in their own space.</p>
+
+            Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content
+            kids can watch and block specific titles you don’t want kids to see.
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="box">
+      <center>
+        <h5 style="color: white; padding: 10px;">Ready to watch? Enter your email to create or restart your membership.</h5>
+      </center>
+      <input placeholder="Email address" type="email" name="email" id="emailInput" required>
+      <button style="margin-top: 20px;" id="submit" type="submit" form="emailForm">Get Started →</button>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="netflix_favicon.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <title>Netflix-हिंदी</title>
+</head>
+
+<body>
+  <section class="landing">
+    <img class="landing-pic" src="Landing pic.jpg" alt="netflix_background">
+    <nav>
+      <button style="background-color: red; color: white; border-radius: 6px;" id="sign-in">Sign
+        In</button>
+      <img class="logo" src="netflix_logo.png" alt="netflix_logo">
+      <div class="dropdown">
+        <button style="margin: 0px; background-color: transparent;" class="btn btn-secondary dropdown-toggle"
+          type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          🌏 हिंदी
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">हिंदी</a></li>
+          <li><a class="dropdown-item" href="index.html">English</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <h1 style="font-weight: bolder; letter-spacing: 2px;">
+        अनलिमिटेड फ़िल्में, टीवी शो के साथ भी बहुत कुछ</h1>
+      <hr>
+      <h3>जहां चाहें देखें. जब चाहें कैंसल करें.</h3>
+      <hr>
+      <p>देखने के लिए तैयार हैं? अपनी मेंबरशिप बनाने या रीस्टार्ट करने के लिए अपना ईमेल एड्रेस डालें.
+      <p>
+        <input placeholder="ई-मेल एड्रेस" type="email" name="email" id="emailInput" required>
+        <button id="submit" type="submit" form="emailForm">शुरू करो →</button>
+    </div>
+  </section>
+  <!-- <===============TV VIEW===============> -->
+  <section class="tv">
+    <div class="text">
+      <h1 style="font-size: 40px; padding-bottom: 10px; font-weight: bolder;">अपने टीवी पर आनंद लें</h1>
+      <p style="font-size: 18px; font-weight: 100;">स्मार्ट टीवी, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+        प्लेयर के साथ ही दूसरे डिवाइस पर भी देखें.</p>
+    </div>
+    <div class="media">
+      <img id="tv" src="tv.png" alt="">
+      <video autoplay loop src="video-tv-in-0819.m4v"></video>
+    </div>
+  </section>
+  <!-- <===============PHONE VIEW===============> -->
+  <section class="tv">
+    <div class="media">
+      <img id="tv" src="mobile-0819.jpg" alt="">
+    </div>
+    <div style="margin-right: 30px; margin-left: 0px;" class="text">
+      <h1 style="font-size: 40px; padding-bottom: 10px; font-weight: bolder;">ऑफ़लाइन देखने के लिए अपने शो डाउनलोड करें
+      </h1>
+      <p style="font-size: 18px; font-weight: 100;">अपने पसंदीदा शो और फ़िल्में सेव करें, ताकि आप कभी भी इन्हें देख
+        सकें..</p>
+    </div>
+  </section>
+  <!-- <===============DEVICES VIEW===============> -->
+  <section class="tv">
+    <div class="text">
+      <h1 style="font-size: 40px; padding-bottom: 10px; font-weight: bolder;">हर जगह देखें</h1>
+      <p style="font-size: 18px; font-weight: 100;">बिना ज़्यादा पेमेंट किए, अपने फ़ोन, टैबलेट, लैपटॉप और टीवी पर
+        अनलिमिटेड फ़िल्में और टीवी शो स्ट्रीम करें.</p>
+    </div>
+    <div class="media">
+      <img id="tv" src="device-pile-in.png" alt="">
+    </div>
+  </section>
+  <!-- <===============CHILDREN VIEW===============> -->
+  <section class="tv">
+    <div class="media">
+      <img id="tv" src="Children.png" alt="">
+    </div>
+    <div style="margin-right: 30px; margin-left: 0px;" class="text">
+      <h1 style="font-size: 40px; padding-bottom: 10px; font-weight: bolder;">बच्चों के लिए प्रोफ़ाइल बनाएं</h1>
+      <p style="font-size: 18px; font-weight: 100;">बच्चों को जाने दें अपने पसंदीदा किरदारों के साथ उस रोमांचक सफ़र पर
+        जो सिर्फ़ उनके लिए ही है - आपकी मेंबरशिप के साथ फ़्री.</p>
+    </div>
+  </section>
+  <section class="accordion">
+    <center>
+      <h1 style="color: white; font-size: 50px; font-weight: bold;">अक्सर पूछे जाने वाले सवाल</h1>
+    </center>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Netflix क्या है?
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>Netflix एक स्ट्रीमिंग सर्विस है जिसके ज़रिए आप हज़ारों इंटरनेट-कनेक्टेड डिवाइस पर तरह-तरह के अवॉर्ड विजेता
+              टीवी शो, फ़िल्में, ऐनिमे, डॉक्यूमेंट्रीज़ का लुत्फ़ उठा सकते हैं.</p>
+            आप जब चाहें, जितना चाहें, बिना किसी विज्ञापन के देख सकते हैं – सारा कॉन्टेंट बहुत कम मासिक शुल्क पर. खोजने
+            के लिए हमेशा कुछ नया होता है और हर हफ़्ते नए टीवी शो और फ़िल्में जोड़ी जाती हैं!
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Netflix की कीमत कितनी है?
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">हर महीने की तय फ़ी देकर अपने स्मार्टफ़ोन, टैबलेट, स्मार्ट टीवी, लैपटॉप, या
+            स्ट्रीमिंग डिवाइस पर Netflix देखें. हर महीने ₹149 से ₹649 तक के प्लान. कोई एक्सट्रा कीमत या कॉन्ट्रैक्ट
+            नहीं.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            मैं कहां देख सकता हूं?
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>कहीं भी, कभी भी देखें अपने पर्सनल कंप्यूटर से या स्मार्ट टीवी, स्मार्टफ़ोन, टैबलेट, स्ट्रीमिंग मीडिया
+              प्लेयर और गेम कंसोल सहित Netflix ऐप ऑफ़र करने वाले किसी भी इंटरनेट-कनेक्टेड डिवाइस पर तुरंत देखने के लिए,
+              वेब पर netflix.com पर अपने Netflix अकाउंट में साइन इन करें.</p>
+            आप iOS, Android या Windows 10 ऐप से भी अपने पसंदीदा शो डाउनलोड कर सकते हैं. चलते-फिरते और बिना इंटरनेट
+            कनेक्शन के देखने के लिए डाउनलोड का उपयोग करें. Netflix को अपने साथ कहीं भी ले जाएं.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            मैं कैसे कैंसल करूं?
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Netflix लचीला है. कोई परेशान करने वाले कॉन्ट्रैक्ट नहीं और कोई बंधन नहीं हैं. आप
+            आसानी से दो क्लिक में अपना अकाउंट ऑनलाइन कैंसल कर सकते हैं. कोई कैंसलेशन फ़ीस नहीं है – अपना अकाउंट कभी भी
+            शुरू या बंद करें.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+            मैं Netflix पर क्या देख सकता/सकती हूं?
+          </button>
+        </h2>
+        <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Netflix की बहुत बड़ी लाइब्रेरी में फ़ीचर फ़िल्मों, डॉक्यूमेंट्री, टीवी शो, ऐनिमे,
+            अवॉर्ड-विनिंग Netflix ओरिजिनल्स के अलावा और भी बहुत कुछ है. आप जितना चाहें, कभी भी देखें.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+            क्या Netflix बच्चों के लिए ठीक है?
+          </button>
+        </h2>
+        <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>आपकी मेंबरशिप में Netflix किड्स एक्सपीरियंस शामिल है. बच्चे अपनी तरह से पारिवारिक टीवी शो और फ़िल्मों का
+              आनंद लेते हैं, लेकिन आप उनके द्वारा देखे जाने वाले कॉन्टेंट को कंट्रोल कर सकते हैं.</p>
+
+            बच्चों की प्रोफ़ाइल में PIN से सुरक्षित पैरेंटल कंट्रोल्स होते हैं जिससे आप बच्चों को मेच्योरिटी रेटिंग वाले
+            कॉन्टेंट देखने से रोक सकते हैं और उन टाइटल को ब्लॉक कर सकते हैं जिन्हें आप नहीं चाहते हैं कि बच्चे देखें.
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="box">
+      <center>
+        <h5 style="color: white; padding: 10px;">देखने के लिए तैयार हैं? अपनी मेंबरशिप बनाने या रीस्टार्ट करने के लिए
+          अपना ईमेल एड्रेस डालें.
+        </h5>
+      </center>
+      <input placeholder="ई-मेल एड्रेस" type="email" name="email" id="emailInput" required>
+      <button style="margin-top: 20px;" id="submit" type="submit" form="emailForm">शुरू करो →</button>
+    </div>
+  </section>
+  <script>
+    window.addEventListener('resize', function () {
+      if (window.innerWidth <= 768) {
+        document.getElementsByClassName("btn btn-secondary dropdown-toggle")[0].innerHTML = "🌏︎";
+      }
+      else {
+        document.getElementsByClassName("btn btn-secondary dropdown-toggle")[0].innerHTML = "🌏︎ हिंदी";
+
+      }
+    });
+    const image = document.getElementsByClassName("logo")[0];
+
+    image.addEventListener('click', function () {
+      location.reload();
+    });
+  </script>
+</body>
+
+</html>
