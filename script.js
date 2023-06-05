@@ -1,3 +1,4 @@
+console.log("Scirpt Injected")
 window.addEventListener('resize', function() {
  if (window.innerWidth <= 768) {
   document.getElementsByClassName("btn btn-secondary dropdown-toggle")[0].innerHTML = "🌏︎";
