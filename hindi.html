@@ -205,6 +205,9 @@
       <button style="margin-top: 20px;" id="submit" type="submit" form="emailForm">शुरू करो →</button>
     </div>
   </section>
+  <div class="arrow">
+  <img class="arrows" src="up.svg" alt=""><img class="arrows" src="up.svg" alt="">
+  </div>
   <script>
     window.addEventListener('resize', function () {
       if (window.innerWidth <= 768) {
@@ -220,6 +223,20 @@
     image.addEventListener('click', function () {
       location.reload();
     });
+    document
+ .getElementsByClassName("arrow")[0]
+ .addEventListener("click", function () {
+  if (
+   window.pageYOffset ===
+   document.documentElement.scrollHeight - window.innerHeight
+  ) {
+   // Reached bottom of the page
+   window.scrollTo(0, 0); // Scroll to the top
+  } else {
+   window.scrollBy(0, window.innerHeight); // Scroll one viewport height
+  }
+ });
+
   </script>
 </body>
 
